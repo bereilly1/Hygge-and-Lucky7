@@ -1,0 +1,53 @@
+/*
+Creator: Bridget Reilly
+Date created: May 12, 2019
+Date last modified: May 12, 2019
+*/
+
+nav {
+    border-top: thin black solid;
+    border-bottom: thin black solid;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+nav .btn {
+    background-color: lightgreen;
+    color: white;
+}
+
+nav .btn:hover {
+    font-weight: bold;
+}
+
+.clear-float {
+    clear:both;
+}
+
+nav a {
+    background-color: #546a7b;
+    color: #fef9ff;
+    padding: 8px;
+    border: thin solid #0d1f2d;
+    text-decoration: none;
+    display: block;
+    margin: 20px 20px;
+    width: 100px;
+    float:left;
+}
+header {
+    background-color: green;
+    color: white;
+    font-family: 'Lucida Handwriting', serif;
+    height: 100px;
+    text-align: center;
+    padding: 30px 10px 20px 10px;
+}
+
+footer {
+    background-color: green;
+    color: white;
+    height: 100px;
+    text-align: center;
+    padding: 30px 10px 20px 10px;
+}

@@ -1,0 +1,125 @@
+<! DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Hygge: Menu</title>
+<link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
+<style>
+body {
+  background-color: silver;
+}
+label {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+input[type=text] {
+    border: 2px solid #0d1f2d;
+    width: 50%;
+    padding: 8px 8px;
+    margin: 12px 0;
+    box-sizing: border-box;
+    font-size: 1.1em;
+}
+
+fieldset {
+    background-color: #fef9ff;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 12px 0;
+    box-sizing:	border-box;
+}
+
+select, textarea {
+    margin: 12px 0;
+    font-size: 1em;
+}
+
+input[type=submit] {
+    font-size: 1.2em;
+    background-color: lightgreen;
+    color: white;
+    padding: 4px 8px;
+}
+
+input[type=submit]:hover {
+    background-color: white;
+    color: lightgreen;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    padding: 12px 20px;
+    margin: 12px 0;
+    box-sizing: border-box;
+    border: 2px solid #0d1f2d;
+    border-radius: 3px;
+    background-color: #fff;
+    resize: none;
+}
+</style>
+</head>
+
+<body>
+<main>
+  <header class = "jumbotron">
+  <h1 align="center"> Hygge </h1>
+  <h2> New Location: Minneapolis, MN! </h2>
+  <h6> Website looks best with JavaScript</h6>
+  </header>
+
+  <nav>
+    <a class="btn badge-pill" id="home-tab" href="index.html"> <img src="home.svg" alt="home"></a>
+    <a class="btn badge-pill" id="menu-tab" href="menu.html"> Menu</a>
+    <a class="btn badge-pill" id="contact-tab" href="contact.html"> Contact Us</a>
+  </nav>
+  <div class="clear-float"> </div>
+
+
+<form action="inputn.html" method="POST">
+            <label> File a Request</label><br/ >
+            Name: <input type="text" name="name" required/><br />
+            Email: <input type="text" name="email" required/><br />
+            Phone: <input type="text" name="phone" required/><br />
+            Reason for Inquiry:<select name="reason">
+            <option value="catering"> Catering </option>
+            <option value="party"> Private Party</option>
+            <option value="feedback"> Feedback </option>
+            <option value="other"> Other </option>
+            </select> <br />
+            Additional Information: <textarea name="additionalinformation"></textarea><br />
+            Have you been to Hygge? <br />
+            <input type="radio" name="answer" value="YES" />Yes<br />
+            <input type="radio" name="answer" value="NO" />No<br />
+            Best days to contact you:<br />
+            <input type="checkbox" name="myChoices" value="monday" /> M <br />
+            <input type="checkbox" name="myChoices" value="tuseday" /> T <br />
+            <input type="checkbox" name="myChoices" value="wednesday" /> W <br />
+            <input type="checkbox" name="myChoices" value="thursday" /> Th <br />
+            <input type="checkbox" name="myChoices" value="friday" /> F <br />
+            <input type="submit" /><br />
+</form>
+
+
+<footer>
+  <hr />
+<p> 350 W 51st Street</p>
+<p> New York, NY 10019</p>
+<p> (212)-543-6344</p>
+<hr />
+</footer>
+
+</main>
+
+<script>
+  $(function () {
+    $('#myTab li:last-child a').tab('show')
+  })
+  $('.carousel').carousel({
+  interval: 2000
+})
+</script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<! DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Hygge: Menu</title>
+<link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
+<style>
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+</style>
+
+</head>
+<body>
+
+<main>
+<header class = "jumbotron">
+<h1 align="center"> Hygge </h1>
+<h2> New Location: Minneapolis, MN! </h2>
+<h6> Website looks best with JavaScript</h6>
+</header>
+
+<nav>
+  <a class="btn badge-pill" id="home-tab" href="index.html"> <img src="home.svg" alt="home"></a>
+  <a class="btn badge-pill" id="menu-tab" href="menu.html"> Menu</a>
+  <a class="btn badge-pill" id="contact-tab" href="contact.html"> Contact Us</a>
+</nav>
+<div class="clear-float"> </div>
+
+
+
+<div id="carousel" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <h1> New Location: Minneapolis, MN!</h1>
+    <div class="carousel-item">
+      <h1> New Seasonal Menu!</h1>
+      <h2> Summer Breakfast</h2>
+    </div>
+    <div class="carousel-item">
+      <h1> Mimosa of the Month: Elderflower and Grapefruit</h1>
+    </div>
+  </div>
+</div>
+
+<div style="background-color: cornsilk;">
+<section>
+<article id="about">
+  <div class="container">
+
+              <div class="row">
+<figure><img src="danish_breakfast.jpg" alt="Picture of Danish Breakfast" style=" width: 1000px;" class="center" class="img-fluid" /></figure>
+</div>
+<div class= "row">
+<p> Hygge Description </p>
+<p> A classic Danish breakfast is made up of a variety of bread topped with cold meats, jams, and and soft cheese.
+  On special occasions, soft boiled eggs, fruit, and yogurt is also served. Although originating in Denmark, we
+  take a very American take on the Danish Breakfast, adding Spanish style
+   cold meats, eggs your style, and lots of Avocado. At Hygge (the Danish word for that coziness of winter) we
+   believe that breakfast should be served at anytime of day, or year. Come cozy up with a cup of coffee or our
+    special mimosas, and enjoy a decedent take on the Danish Breakfast. </p>
+</div>
+</div>
+</article>
+</section>
+</div>
+
+<footer>
+  <hr />
+<p> 350 W 51st Street</p>
+<p> New York, NY 10019</p>
+<p> (212)-543-6344</p>
+<hr />
+</footer>
+
+</main>
+
+<script>
+  $('carousel').on('slide.bs.carousel', function () {
+  .carousel('cycle')
+})
+</script>
+</body>
+</html>

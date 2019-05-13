@@ -1,0 +1,136 @@
+<! DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Hygge: Menu</title>
+<link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
+<style>
+            table, th, td {
+                padding: 5px 5px 5px 10px;
+            }
+            table {
+                width: 100%;
+            }
+            th {
+                height: 25px;
+                font-weight: bold;
+            }
+            tbody tr:nth-child(even) {
+                background-color: white;
+            }
+            tbody tr:nth-child(odd) {
+                background-color: lightblue;
+            }
+            body {
+              background-color: lemonchiffon;
+
+            }
+        </style>
+
+</head>
+
+<body>
+<main>
+  <header class = "jumbotron">
+  <h1 align="center"> Hygge </h1>
+  <h2> New Location: Minneapolis, MN! </h2>
+  <h6> Website looks best with JavaScript</h6>
+  </header>
+
+
+  <nav>
+    <a class="btn badge-pill" id="home-tab" href="index.html"> <img src="home.svg" alt="home"></a>
+    <a class="btn badge-pill" id="menu-tab" href="menu.html"> Menu</a>
+    <a class="btn badge-pill" id="contact-tab" href="contact.html"> Contact Us</a>
+  </nav>
+  <div class="clear-float"> </div>
+
+
+<section>
+<h2> Food </h2>
+
+<article>
+  <div class = "container">
+    <div class ="row">
+      <div class = "col-lg-3 col-md-4">
+<h3> Rome </h3>
+<p>Fresh mozzarella cheese, prosciutto, vanilla yogurt parfait, castelvetrano olives,
+two eggs your way, and seasonal fresh fruit, served with cibatta and baguette.</p>
+<p> $8.00 </p>
+</div>
+
+
+<div class = "col-lg-3 col-md-4">
+<h3> Paris </h3>
+<p>Brie and camembert, candied bacon, avocado, lemon and sugar crepe, kalamata olives,
+ two eggs your way, seasonal fresh fruit, served with baguette and croissant.</p>
+ <p> $8.00 </p>
+</div>
+</div>
+
+<div class ="row">
+  <div class = "col-lg-3 col-md-4">
+<h3> New York </h3>
+<p>Goat Cheese, taylor ham, avocado, crispy hash browns, steamed spinach,
+two eggs your way, seasonal fresh fruit, served with sourdough and traditional boiled bagel.</p>
+ <p> $9.00 </p>
+</div>
+
+
+<div class = "col-lg-3 col-md-4">
+<h3> Traditional </h3>
+<p>Gruyere and brie, bacon, danish pancake, rasberry jam, plain yogurt,
+ two eggs your way, seasonal fresh fruit, served with brown nut bread and french bread.</p>
+ <p> $9.00 </p>
+</div>
+</div>
+</div>
+</article>
+
+
+<table>
+    <thead>
+        <tr>
+          <th>Drinks</th>
+          <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>Special Mimosa</td>
+          <td>$7.00</td>
+        </tr>
+        <tr>
+          <td>Drip Coffee</td>
+          <td>$3.00</td>
+        </tr>
+        <tr>
+          <td>Espresso</td>
+          <td>$3.50</td>
+        </tr>
+    </tbody>
+</table>
+</section>
+
+
+<footer>
+<hr />
+<p> 350 W 51st Street</p>
+<p> New York, NY 10019</p>
+<p> (212)-543-6344</p>
+<hr />
+</footer>
+
+</main>
+
+<script>
+  $(function () {
+    $('#myTab li:last-child a').tab('show')
+  })
+  $('.carousel').carousel({
+  interval: 2000
+})
+</script>
+</body>
+</html>
